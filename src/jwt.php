@@ -1,5 +1,6 @@
 <?php
 namespace fge\jwt\src;
+use fge\token\src\token as token;
 class jwt extends token{
     protected $clave="";
     protected $json="";
