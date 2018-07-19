@@ -15,7 +15,7 @@ class jwt extends token{
         $this->e=new \fge\token\src\encrypt($CLAVE);
     }
     public function decryptp1($rjwt){
-        return preg_match('/^[0-9 A-Z]{4}.(\w|[\/]|[\+]|[\=])*.[0-9 A-Z]{10}$/',$rjwt);
+        return preg_match('/^[0-9 A-Z]{4}.(\w|[\-]|[\_]|\s)*.[0-9 A-Z]{10}$/',$rjwt);
     }
     public function decryptp1_5($rjwt){
         $tokens=explode('.',$rjwt);

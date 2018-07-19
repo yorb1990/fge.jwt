@@ -18,6 +18,6 @@ class jwtController extends Controller
         if(!$token->genjwt($obj,$error)){
             return \Response::json($error,506);
         }
-        return \Response::json($token);   
+        return \Response::json($token->token);   
     }
 }
