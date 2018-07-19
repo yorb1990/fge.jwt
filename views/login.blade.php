@@ -1,6 +1,5 @@
 @if(env("CLAVE")!=null)
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"/>
 <div class="card col-md-6 offset-md-3">
     <div class="card-header">
         Iniciar sesion
@@ -41,7 +40,8 @@
                 },
                 body: JSON.stringify(data)
             })
-            .then(function(response) {            
+            .then(function(response) {       
+                console.log(response)     
                 if(response.ok){
                     response.json()
                     .then(function(json) {            
